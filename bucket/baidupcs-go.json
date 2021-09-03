@@ -2,6 +2,18 @@
     "homepage": "https://github.com/qjfoidnh/BaiduPCS-Go",
     "description": "仿 Linux shell 文件处理命令的百度网盘命令行客户端",
     "version": "3.8.3",
+    "architecture": {
+        "32bit": {
+            "url": "https://github.com/qjfoidnh/BaiduPCS-Go/releases/download/v3.8.3/BaiduPCS-Go-v3.8.3-windows-x86.zip",
+            "hash": "c5b6dcbc9499a107d6bbfcc7852f49dc17af748b16695201e6c8e3514bd2a959"
+            "extract_dir": "BaiduPCS-Go-v3.8.3-windows-x86",
+        },
+        "64bit": {
+            "url": "https://github.com/qjfoidnh/BaiduPCS-Go/releases/download/v3.8.3/BaiduPCS-Go-v3.8.3-windows-x64.zip",
+            "hash": "41eb7eb97b10b51365de6c36207b981bdcebc76800d250ecf9416cde7d975ada",
+            "extract_dir": "BaiduPCS-Go-v3.8.3-windows-x64",
+        }
+    },
     "url": "https://github.com/qjfoidnh/BaiduPCS-Go/releases/download/v3.8.3/BaiduPCS-Go-v3.8.3-windows-x64.zip",
     "extract_dir": "BaiduPCS-Go-v3.8.3-windows-x64",
     "hash": "41eb7eb97b10b51365de6c36207b981bdcebc76800d250ecf9416cde7d975ada",
@@ -13,7 +25,15 @@
         ]
     ],
     "autoupdate": {
-        "url": "https://github.com/qjfoidnh/BaiduPCS-Go/releases/download/v$version/BaiduPCS-Go-v$version-windows-x64.zip",
-        "extract_dir": "BaiduPCS-Go-v$version-windows-x64"
+        "architecture": {
+            "32bit": {
+                "url": "https://github.com/qjfoidnh/BaiduPCS-Go/releases/download/v$version/BaiduPCS-Go-v$version-windows-x86.zip",
+                "extract_dir": "BaiduPCS-Go-v$version-windows-x86"
+            },
+            "64bit": {
+                "url": "https://github.com/qjfoidnh/BaiduPCS-Go/releases/download/v$version/BaiduPCS-Go-v$version-windows-x64.zip",
+                "extract_dir": "BaiduPCS-Go-v$version-windows-x64"
+            }
+        }
     }
 }
