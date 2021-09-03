@@ -19,7 +19,15 @@
     "persist": [
         "dnscrypt-proxy.toml"
     ],
-    "checkver": {
-        "github": "https://github.com/DNSCrypt/dnscrypt-proxy"
+    "checkver": "github",
+    "autoupdate": {
+        "architecture": {
+            "32bit": {
+                "url": "https://github.com/DNSCrypt/dnscrypt-proxy/releases/download/v$version/dnscrypt-proxy-win32-$version.zip"
+            },
+            "64bit": {
+                "url": "https://github.com/DNSCrypt/dnscrypt-proxy/releases/download/v$version/dnscrypt-proxy-win64-$version.zip"
+            }
+        }
     }
 }
