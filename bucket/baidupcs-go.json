@@ -1,10 +1,10 @@
 {
     "homepage": "https://github.com/qjfoidnh/BaiduPCS-Go",
     "description": "仿 Linux shell 文件处理命令的百度网盘命令行客户端",
-    "version": "3.8.2",
-    "url": "https://github.com/qjfoidnh/BaiduPCS-Go/releases/download/v3.8.2/BaiduPCS-Go-v3.8.2-windows-x64.zip",
-    "extract_dir": "BaiduPCS-Go-v3.8.2-windows-x64",
-    "hash": "7ea34a1149ac2c9354e592861fc7e7025fa0b0606415674c3e71ccd279ec8040",
+    "version": "3.8.3",
+    "url": "https://github.com/qjfoidnh/BaiduPCS-Go/releases/download/v3.8.3/BaiduPCS-Go-v3.8.3-windows-x64.zip",
+    "extract_dir": "BaiduPCS-Go-v3.8.3-windows-x64",
+    "hash": "41eb7eb97b10b51365de6c36207b981bdcebc76800d250ecf9416cde7d975ada",
     "checkver": "github",
     "bin": [
         [
