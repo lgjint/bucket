@@ -11,12 +11,6 @@
             "Mod Organizer 2"
         ]
     ],
-    "persist": [
-        "downloads",
-        "mods",
-        "overwrite",
-        "profiles"
-    ],
     "checkver": {
         "github": "https://github.com/ModOrganizer2/modorganizer"
     },
