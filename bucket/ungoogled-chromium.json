@@ -13,13 +13,21 @@
             "extract_dir": "ungoogled-chromium_96.0.4664.45-1.1_windows"
         }
     },
-    "bin": "chrome.exe",
+    "bin": [
+        [
+            "chrome.exe",
+            "Ungoogled Chromium",
+            "--user-data-dir=\"$dir\\User Data\""
+        ]
+    ],
     "shortcuts": [
         [
             "chrome.exe",
-            "Ungoogled Chromium"
+            "chromium",
+            "--user-data-dir=\"$dir\\User Data\""
         ]
     ],
+    "persist": "User Data",
     "checkver": {
         "url": "https://ungoogled-software.github.io/ungoogled-chromium-binaries/releases/windows/64bit/",
         "regex": "\\d\">\\s*([\\d.-]+)<"
