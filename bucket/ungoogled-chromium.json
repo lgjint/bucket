@@ -17,14 +17,14 @@
         [
             "chrome.exe",
             "chromium",
-            "--no-sandbox""
+            "--no-sandbox"
         ]
     ],
     "shortcuts": [
         [
             "chrome.exe",
             "Ungoogled Chromium",
-            "--no-sandbox""
+            "--no-sandbox"
         ]
     ],
     "checkver": {
