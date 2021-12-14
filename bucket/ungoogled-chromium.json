@@ -16,18 +16,17 @@
     "bin": [
         [
             "chrome.exe",
-            "Ungoogled Chromium",
-            "--user-data-dir=\"$dir\\User Data\""
+            "chromium",
+            "--no-sandbox""
         ]
     ],
     "shortcuts": [
         [
             "chrome.exe",
-            "chromium",
-            "--user-data-dir=\"$dir\\User Data\""
+            "Ungoogled Chromium",
+            "--no-sandbox""
         ]
     ],
-    "persist": "User Data",
     "checkver": {
         "url": "https://ungoogled-software.github.io/ungoogled-chromium-binaries/releases/windows/64bit/",
         "regex": "\\d\">\\s*([\\d.-]+)<"
