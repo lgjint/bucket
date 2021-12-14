@@ -1,0 +1,35 @@
+{
+    "version": "96.0.4664.45-1",
+    "description": "Modifications to Google Chromium for removing Google integration and enhancing privacy, control, and transparency.",
+    "homepage": "https://github.com/Eloston/ungoogled-chromium",
+    "license": {
+        "identifier": "BSD-3-Clause",
+        "url": "https://github.com/Eloston/ungoogled-chromium/blob/master/LICENSE"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/Nifury/ungoogled-chromium-binaries/releases/download/96.0.4664.45-1/ungoogled-chromium_96.0.4664.45-1.1_windows.zip",
+            "hash": "d4817f7ccdc8502c1efa00aa6f56f2b138ad9bdf30ed666f2b3d6e838adddea0",
+            "extract_dir": "ungoogled-chromium_96.0.4664.45-1.1_windows"
+        }
+    },
+    "bin": "chrome.exe",
+    "shortcuts": [
+        [
+            "chrome.exe",
+            "Ungoogled Chromium"
+        ]
+    ],
+    "checkver": {
+        "url": "https://ungoogled-software.github.io/ungoogled-chromium-binaries/releases/windows/64bit/",
+        "regex": "\\d\">\\s*([\\d.-]+)<"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/Nifury/ungoogled-chromium-binaries/releases/download/$version/ungoogled-chromium_$version.1_windows-x64.zip",
+                "extract_dir": "ungoogled-chromium_$version.1_windows"
+            }
+        }
+    }
+}
