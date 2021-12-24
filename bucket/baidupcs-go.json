@@ -15,7 +15,12 @@
             "extract_dir": "BaiduPCS-Go-v3.8.4-windows-x86"
         }
     },
-    "bin": "BaiduPCS-Go.exe",
+    "bin": [
+        [
+            "BaiduPCS-Go.exe",
+            "bdwp"
+        ]
+    ],
     "checkver": "github",
     "autoupdate": {
         "architecture": {
