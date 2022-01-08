@@ -6,7 +6,7 @@
     "architecture": {
         "64bit": {
             "url": "https://github.com/HyNetwork/hysteria/releases/download/v0.9.3/hysteria-tun-windows-6.0-amd64.exe#/hysteria.exe",
-            "hash": "00934cb086afc20b0dd44f89af6f20a51d27dbf3e7ec43cedc40e6866f467176"
+            "hash": "c4a3ea1bf915e4756680d8158ebef9615f138a0438ca6aab2e0a989263ee4430"
         },
         "32bit": {
             "url": "https://github.com/HyNetwork/hysteria/releases/download/v0.9.3/hysteria-tun-windows-6.0-386.exe#/hysteria.exe",
