@@ -5,11 +5,11 @@
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/HyNetwork/hysteria/releases/download/v0.9.3/hysteria-windows-6.0-amd64.exe#/hysteria.exe",
+            "url": "https://github.com/HyNetwork/hysteria/releases/download/v0.9.3/hysteria-tun-windows-6.0-amd64.exe#/hysteria.exe",
             "hash": "00934cb086afc20b0dd44f89af6f20a51d27dbf3e7ec43cedc40e6866f467176"
         },
         "32bit": {
-            "url": "https://github.com/HyNetwork/hysteria/releases/download/v0.9.3/hysteria-windows-6.0-386.exe#/hysteria.exe",
+            "url": "https://github.com/HyNetwork/hysteria/releases/download/v0.9.3/hysteria-tun-windows-6.0-386.exe#/hysteria.exe",
             "hash": "f0e0e9efdd37d2af4f54682365c45b09529fd20f2952d45bda05418fe99c9ab9"
         }
     },
@@ -18,10 +18,10 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/HyNetwork/hysteria/releases/download/v$version/hysteria-windows-6.0-amd64.exe#/hysteria.exe"
+                "url": "https://github.com/HyNetwork/hysteria/releases/download/v$version/hysteria-tun-windows-6.0-amd64.exe#/hysteria.exe"
             },
             "32bit": {
-                "url": "https://github.com/HyNetwork/hysteria/releases/download/v$version/hysteria-windows-6.0-386.exe#/hysteria.exe"
+                "url": "https://github.com/HyNetwork/hysteria/releases/download/v$version/hysteria-tun-windows-6.0-386.exe#/hysteria.exe"
             }
         }
     }
