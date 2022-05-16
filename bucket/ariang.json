@@ -1,9 +1,9 @@
 {
     "homepage": "https://github.com/mayswind/AriaNg",
     "description": "AriaNg is a modern web frontend making aria2 easier to use",
-    "version": "1.2.3",
-    "url": "https://github.com/mayswind/AriaNg/releases/download/1.2.3/AriaNg-1.2.3-AllInOne.zip",
-    "hash": "1862175500e15b3b14eff8db4eba2fbde4e948a1d2a889ef1439bfa7d93cedc3",
+    "version": "1.2.4",
+    "url": "https://github.com/mayswind/AriaNg/releases/download/1.2.4/AriaNg-1.2.4-AllInOne.zip",
+    "hash": "b17dbdebed3a3d59b61fb11268cd24592ad98bf82720a91acdbb6d8c5e54285f",
     "checkver": "github",
     "autoupdate": {
         "url": "https://github.com/mayswind/AriaNg/releases/download/$version/AriaNg-$version-AllInOne.zip"
