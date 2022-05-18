@@ -12,6 +12,10 @@
             "hash": "da4848a33f609972fb0a80a96ed5c3babe2d15d8344539c9e410b8727468b837"
         }
     },
+    "persist": [
+        "AdGuardHome\\data",
+        "AdGuardHome\\AdGuardHome.yaml"
+    ],
     "checkver": {
         "github": "https://github.com/AdguardTeam/AdGuardHome"
     },
