@@ -26,7 +26,7 @@
         "Move-Item ($srcdir + \"\\GFExperience\\FunctionalConsent_*\") -Destination \"$dir\\GFExperience\" | Out-Null",
         "Remove-Item $srcdir -Recurse -Force | Out-Null"
     ],
-    "post_install": "Remove-Item \"$dir\\*\" -Recurse -Force | Out-Null",
+    "post_install": "sudo Remove-Item \"$dir\\*\" -Recurse -Force | Out-Null",
     "installer": {
         "script": "sudo \"$dir\\setup.exe\" /s /noreboot"
     },
