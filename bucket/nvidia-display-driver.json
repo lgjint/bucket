@@ -6,9 +6,7 @@
         "identifier": "Proprietary",
         "url": "https://www.nvidia.com/en-us/about-nvidia/eula-agreement/"
     },
-    "suggest": {
-        "GeForce Experience": "gaming/nvidia-geforce-experience"
-    },
+    "depends": "sudo",
     "url": "https://us.download.nvidia.com/Windows/516.94/516.94-desktop-win10-win11-64bit-international-dch-whql.exe#/dl.7z",
     "hash": "4c52cac1b1f1723c3ffa426b31bbd97877548ea5029ec7a71c0c905061f57b1a",
     "extract_to": "_FullPackage",
@@ -30,7 +28,7 @@
     ],
     "post_install": "Remove-Item \"$dir\\*\" -Recurse -Force | Out-Null",
     "installer": {
-        "file": "setup.exe",
+        "script": "sudo \"$dir\\setup.exe\"",
         "args": [
             "/s",
             "/noreboot"
