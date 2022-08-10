@@ -28,11 +28,7 @@
     ],
     "post_install": "Remove-Item \"$dir\\*\" -Recurse -Force | Out-Null",
     "installer": {
-        "script": "sudo \"$dir\\setup.exe\"",
-        "args": [
-            "/s",
-            "/noreboot"
-        ]
+        "script": "sudo \"$dir\\setup.exe\" /s /noreboot"
     },
     "uninstaller": {
         "script": "Write-Host \"To remove this driver, please use Display Driver Uninstaller: 'scoop install ddu'\" -ForegroundColor Magenta"
