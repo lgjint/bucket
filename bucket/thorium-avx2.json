@@ -14,26 +14,14 @@
         [
             "thorium.exe",
             "thorium",
-            "--user-data-dir=\"$dir\\User Data\"",
-            "--no-default-browser-check",
-            "--allow-outdated-plugins",
-            "--disable-breakpad",
-            "--disable-logging",
-            "--enable-experimental-web-platform-features",
-            "--new-canvas-2d-api"
+            "--user-data-dir=\"$dir\\User Data\" --no-default-browser-check --allow-outdated-plugins --disable-logging --disable-breakpad --enable-experimental-web-platform-features --new-canvas-2d-api"
         ]
     ],
     "shortcuts": [
         [
             "thorium.exe",
             "Thorium",
-            "--user-data-dir=\"$dir\\User Data\"",
-            "--no-default-browser-check",
-            "--allow-outdated-plugins",
-            "--disable-breakpad",
-            "--disable-logging",
-            "--enable-experimental-web-platform-features",
-            "--new-canvas-2d-api"
+            "--user-data-dir=\"$dir\\User Data\" --no-default-browser-check --allow-outdated-plugins --disable-logging --disable-breakpad --enable-experimental-web-platform-features --new-canvas-2d-api"
         ]
     ],
     "persist": "User Data",
