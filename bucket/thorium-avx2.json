@@ -13,7 +13,7 @@
     "bin": [
         [
             "thorium.exe",
-            "Thorium",
+            "thorium",
             "--user-data-dir=\"$dir\\User Data\"",
             "--no-default-browser-check",
             "--allow-outdated-plugins",
