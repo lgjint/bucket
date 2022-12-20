@@ -6,7 +6,7 @@
         "identifier": "GPL-3.0-only"
     },
     "url": "https://github.com/XIU2/CloudflareSpeedTest/releases/download/v2.1.0/CloudflareST_windows_amd64.zip",
-    "hash": "caf15627d637952a71c8eafffd759cabca7fe9716f2045f406bd991dd7b3e9b4",
+    "hash": "0a0b6be324231c446886966d2721a3e4bae9d9c60c44fffd37d5fdfee0d55a33",
     "bin": [
         [
             "CloudflareST.exe",
