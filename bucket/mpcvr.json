@@ -26,10 +26,10 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/TDesktop-x64/tdesktop/releases/download/$majorVersion.$minorVersion.$patchVersion/MpcVideoRenderer-$version.zip"
+                "url": "https://github.com/Aleksoid1978/VideoRenderer/releases/download/$majorVersion.$minorVersion.$patchVersion/MpcVideoRenderer-$version.zip"
             },
             "32bit": {
-                "url": "https://github.com/TDesktop-x64/tdesktop/releases/download/$majorVersion.$minorVersion.$patchVersion/MpcVideoRenderer-$version.zip"
+                "url": "https://github.com/Aleksoid1978/VideoRenderer/releases/download/$majorVersion.$minorVersion.$patchVersion/MpcVideoRenderer-$version.zip"
             }
         }
     }
