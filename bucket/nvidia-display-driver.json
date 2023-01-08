@@ -7,26 +7,12 @@
         "url": "https://www.nvidia.com/en-us/about-nvidia/eula-agreement/"
     },
     "depends": "sudo",
-    "url": "https://us.download.nvidia.com/Windows/528.02/528.02-desktop-win10-win11-64bit-international-dch-whql.exe#/dl.7z",
+    "url": "https://us.download.nvidia.com/Windows/528.02/528.02-desktop-win10-win11-64bit-international-dch-whql.exe",
     "hash": "0d730ba6f058d35890e08c317f2921575a554226557777f651735f4f786c77eb",
-    "extract_to": "_FullPackage",
-    "pre_install": [
-        "$srcdir = \"$dir\\_FullPackage\"",
-        "Move-Item ($srcdir + \"\\Display.Driver\") -Destination \"$dir\" | Out-Null",
-        "Move-Item ($srcdir + \"\\Display.Optimus\") -Destination \"$dir\" | Out-Null",
-        "Move-Item ($srcdir + \"\\NVI2\") -Destination \"$dir\" | Out-Null",
-        "Move-Item ($srcdir + \"\\PhysX\") -Destination \"$dir\" | Out-Null",
-        "Move-Item ($srcdir + \"\\EULA.txt\") -Destination \"$dir\" | Out-Null",
-        "Move-Item ($srcdir + \"\\ListDevices.txt\") -Destination \"$dir\" | Out-Null",
-        "Move-Item ($srcdir + \"\\setup.cfg\") -Destination \"$dir\" | Out-Null",
-        "Move-Item ($srcdir + \"\\setup.exe\") -Destination \"$dir\" | Out-Null",
-        "New-Item \"$dir\\GFExperience\" -Type Directory | Out-Null",
-        "Move-Item ($srcdir + \"\\GFExperience\\PrivacyPolicy\") -Destination \"$dir\\GFExperience\" | Out-Null",
-        "Move-Item ($srcdir + \"\\GFExperience\\EULA.html\") -Destination \"$dir\\GFExperience\" | Out-Null",
-        "Move-Item ($srcdir + \"\\GFExperience\\FunctionalConsent_*\") -Destination \"$dir\\GFExperience\" | Out-Null"
-    ],
     "installer": {
-        "script": "sudo \"$dir\\setup.exe\" /s /noreboot"
+         "args": [
+            "/noreboot"
+        ]
     },
     "uninstaller": {
         "script": "Write-Host \"To remove this driver, please use Display Driver Uninstaller: 'scoop install ddu'\" -ForegroundColor Magenta"
@@ -36,6 +22,6 @@
         "regex": "NVidia Display Driver ([\\d.]+)"
     },
     "autoupdate": {
-        "url": "https://us.download.nvidia.com/Windows/$version/$version-desktop-win10-win11-64bit-international-dch-whql.exe#/dl.7z"
+        "url": "https://us.download.nvidia.com/Windows/$version/$version-desktop-win10-win11-64bit-international-dch-whql.exe"
     }
 }
