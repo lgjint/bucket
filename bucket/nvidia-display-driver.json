@@ -6,7 +6,6 @@
         "identifier": "Proprietary",
         "url": "https://www.nvidia.com/en-us/about-nvidia/eula-agreement/"
     },
-    "depends": "sudo",
     "url": "https://us.download.nvidia.com/Windows/528.02/528.02-desktop-win10-win11-64bit-international-dch-whql.exe",
     "hash": "0d730ba6f058d35890e08c317f2921575a554226557777f651735f4f786c77eb",
     "installer": {
