@@ -16,8 +16,7 @@
     "bin": "sing-box.exe",
     "persist": "config",
     "checkver": {
-        "url": "https://api.github.com/repos/SagerNet/sing-box/releases",
-        "regex": "v([\\d.]+(-beta\\d+|-rc\\d+)?)"
+        "github": "https://github.com/SagerNet/sing-box"
     },
     "autoupdate": {
         "architecture": {
