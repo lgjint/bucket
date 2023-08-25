@@ -17,7 +17,7 @@
     "persist": "config",
     "checkver": {
         "url": "https://api.github.com/repos/SagerNet/sing-box/releases",
-        "regex": "v([\\d.]+(-beta\\.?\\d+)?)"
+        "regex": "v([\\d.]+(-beta\\.?\\d+|-rc\\.?\\d+)?)"
     },
     "autoupdate": {
         "architecture": {
