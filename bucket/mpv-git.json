@@ -14,7 +14,7 @@
     "architecture": {
         "64bit": {
             "url": "https://downloads.sourceforge.net/project/mpv-player-windows/64bit-v3/mpv-x86_64-v3-20231112-git-7cab30c.7z",
-            "hash": "sha1:7fbfdabc2a4189b8577cd5a03ea3a79449a925c5"
+            "hash": "sha1:347492c7981962a84dbe688a043ec63a2bdf4047"
         },
         "32bit": {
             "url": "https://downloads.sourceforge.net/project/mpv-player-windows/32bit/mpv-i686-20231112-git-7cab30c.7z",
