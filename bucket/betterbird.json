@@ -5,7 +5,7 @@
     "license": "MPL-2.0",
     "architecture": {
         "64bit": {
-            "url": "https://www.betterbird.eu/downloads/WindowsInstaller/betterbird-115.5.1-bb19.en-US.win64.installer.exe#/dl.7z",
+            "url": "https://www.betterbird.eu/downloads/WindowsInstaller/betterbird-115.5.1-bb19-build2.en-US.win64.installer.exe#/dl.7z",
             "hash": "26a360437311e4948ee9f5de7de10b45535cf094ea5f4c6ffada9abe2b6e0bbd"
         }
     },
