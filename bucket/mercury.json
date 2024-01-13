@@ -10,14 +10,34 @@
             "extract_dir": "mercury_121.0.2_win64/mercury"
         }
     },
-    "pre_install": "Remove-Item \"$dir/pingsender.exe\"",
+    "post_install": [
+        "firefox -CreateProfile \"Scoop $persist_dir\\profile\"",
+        "$Addition = \"$persist_dir\\addition\"",
+        "if (Test-Path $Addition) {",
+        "  info 'Copying additional items...'",
+        "  Copy-Item -Path $Addition\\* -Destination $dir -Force -Recurse -ErrorAction SilentlyContinue",
+        "}"
+    ],
     "bin": "mercury.exe",
     "shortcuts": [
         [
             "mercury.exe",
             "Mercury"
+        ],
+        [
+            "mercury.exe",
+            "Mercury Profile Manager",
+            "-P"
         ]
     ],
+    "persist": [
+        "distribution",
+        "profile"
+    ],
+    "checkver": {
+        "url": "https://www.mozilla.org/en-US/firefox/notes/",
+        "regex": "<div class=\"c-release-version\">([\\d.]+)</div>"
+    },
     "checkver": {
         "url": "https://api.github.com/repositories/510134922/releases",
         "jsonpath": "$[0].tag_name",
