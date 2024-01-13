@@ -11,7 +11,7 @@
         }
     },
     "post_install": [
-        "firefox -CreateProfile \"Scoop $persist_dir\\profile\"",
+        "mercury -CreateProfile \"Scoop $persist_dir\\profile\"",
         "$Addition = \"$persist_dir\\addition\"",
         "if (Test-Path $Addition) {",
         "  info 'Copying additional items...'",
