@@ -26,8 +26,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/Alex313031/Mercury/releases/download/v.$version/mercury_$version_win64_AVX.zip
-",
+                "url": "https://github.com/Alex313031/Mercury/releases/download/v.$version/mercury_$version_win64_AVX.zip",
                 "extract_dir": "mercury_$version_win64/mercury"
             }
         }
