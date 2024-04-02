@@ -6,7 +6,7 @@
     "architecture": {
         "64bit": {
             "url": "https://www.betterbird.eu/downloads/WindowsInstaller/betterbird-115.9.0-bb26.en-US.win64.installer.exe#/dl.7z",
-            "hash": "d35bad820a47b561565b410d644db66847a692db1f24cacb66e33bb04507217d"
+            "hash": "4d35a75d3756fa394edc064c72fd581c67fcccfe29db6e4a4914724c6430604f"
         }
     },
     "extract_dir": "core",
