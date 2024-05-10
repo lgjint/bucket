@@ -35,18 +35,20 @@
         "profile"
     ],
     "checkver": {
-        "url": "https://www.betterbird.eu/releasenotes/index.html",
-        "regex": "([\\d.]+-bb[\\d]+(?:-build\\d+)?) \\("
+        "script": [
+            "try { $detail = Invoke-WebRequest 'https://www.betterbird.eu/downloads/get.php?os=win&lang=en-US&version=release&portable=true' -MaximumRedirection 0 -ErrorAction Ignore } catch { $_.Exception.Response }",
+            "return $detail.Headers.Location"
+        ],
+        "regex": "BetterbirdPortable-(.+?).en-US"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://www.betterbird.eu/downloads/WindowsInstaller/betterbird-$version.en-US.win64.installer.exe#/dl.7z",
-                "hash": {
-                    "url": "https://www.betterbird.eu/downloads/sha256.txt",
-                    "regex": "$sha256 betterbird-$version.de.win64.installer.exe"
-                }
+                "url": "https://www.betterbird.eu/downloads/WindowsPortable/BetterbirdPortable-$version.en-US.win64.zip"
             }
+        },
+        "hash": {
+            "url": "https://www.betterbird.eu/downloads/sha256-$majorVersion.txt"
         }
     }
 }
