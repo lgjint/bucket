@@ -10,31 +10,30 @@ on:
 
 name: Update bucket
 jobs:
-  update:
-    name: ♻ Update manifests
-    runs-on: ubuntu-latest
+  scoop-update:
+    runs-on: windows-latest
     steps:
-      - name: ⬇ Checkout repo
-        uses: actions/checkout@master
-      - name: ♻ Run autoupdate
-        uses: foosel/scoop-checkver-action@main
-        with:
-          bucket: bucket
-          force: ${{ github.event.inputs.force }}
-      - name: 🚀 Deploy changes
-        run: |
-          # set git author
-          git config --global user.name 'github-actions[bot]'
-          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-          # create individual commit per updated manifest
-          while read file; do
-            if [[ $file == bucket/* ]] && [[ $file == *.json ]]; then
-              version=$(cat $file | jq -r .version)
-              manifest=$(basename $file .json)
-              message="$manifest: Update to version $version"
-              git add "$file"
-              git commit -m "$message"
-            fi
-          done < <(git diff --name-only)
-          # finally push
-          git push
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Scoop checkver
+      shell: pwsh
+      run: |
+        git clone https://github.com/ScoopInstaller/Scoop --depth 1
+        .\Scoop\bin\checkver.ps1 -Dir bucket -u
+
+    - name: Deploy changes
+      shell: pwsh
+      run: |
+        git config --global user.name 'github-actions[bot]'
+        git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+        git diff --name-only | ForEach-Object {
+          if ($_ -like 'bucket/*' -and $_ -like '*.json') {
+            $version = (Get-Content $_ | ConvertFrom-Json).version
+            $manifest = [System.IO.Path]::GetFileNameWithoutExtension($_)
+            $message = "${manifest}: Update to version ${version}"
+            git add $_
+            git commit -m $message
+          }
+        }
+        git push
