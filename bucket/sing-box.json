@@ -8,8 +8,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/SagerNet/sing-box/releases/download/v1.10.0-beta.10/sing-box-1.10.0-beta.10-windows-amd64v3.zip",
-            "extract_dir": "sing-box-1.10.0-beta.10-windows-amd64v3",
+            "url": "https://github.com/SagerNet/sing-box/releases/download/v1.10.0-beta.10/sing-box-1.10.0-beta.10-windows-amd64.zip",
+            "extract_dir": "sing-box-1.10.0-beta.10-windows-amd64",
             "hash": "33567c12de6fcfb3ddb8f4d5fd45b8288391e57ef8c04d64c51630b6300e4be4"
         }
     },
@@ -22,8 +22,8 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/SagerNet/sing-box/releases/download/v$version/sing-box-$version-windows-amd64v3.zip",
-                "extract_dir": "sing-box-$version-windows-amd64v3"
+                "url": "https://github.com/SagerNet/sing-box/releases/download/v$version/sing-box-$version-windows-amd64.zip",
+                "extract_dir": "sing-box-$version-windows-amd64"
             }
         }
     }
