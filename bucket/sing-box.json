@@ -1,5 +1,5 @@
 {
-    "version": "1.11.0-alpha.18",
+    "version": "1.11.0-alpha.19",
     "description": "The universal proxy platform.",
     "homepage": "https://sing-box.sagernet.org",
     "license": {
@@ -8,9 +8,9 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/SagerNet/sing-box/releases/download/v1.11.0-alpha.18/sing-box-1.11.0-alpha.18-windows-amd64.zip",
-            "extract_dir": "sing-box-1.11.0-alpha.18-windows-amd64",
-            "hash": "6a0db94f9318c10b0955b52d052e73e0b7f4c1adb6418b3dddb624f7ad6b09ae"
+            "url": "https://github.com/SagerNet/sing-box/releases/download/v1.11.0-alpha.19/sing-box-1.11.0-alpha.19-windows-amd64.zip",
+            "extract_dir": "sing-box-1.11.0-alpha.19-windows-amd64",
+            "hash": "bcaf6ff298d7075286678e4b263ca84bb1f0bcc71ffed31f4491ab368756013c"
         }
     },
     "bin": "sing-box.exe",
