@@ -1,13 +1,13 @@
 {
-    "version": "1.7.9",
+    "version": "1.7.10",
     "description": "A simple speedtest CLI written in Go.",
     "homepage": "https://github.com/showwin/speedtest-go",
     "license": {
         "identifier": "MIT",
         "url": "https://github.com/showwin/speedtest-go/blob/master/LICENSE"
     },
-    "url": "https://github.com/showwin/speedtest-go/releases/download/v1.7.9/speedtest-go_1.7.9_Windows_x86_64.tar.gz",
-    "hash": "50ABE222A49C00266B65EC5BBAC8C1DC65A169EC269CFB262B1B68EA5E61B6F1",
+    "url": "https://github.com/showwin/speedtest-go/releases/download/v1.7.10/speedtest-go_1.7.10_Windows_x86_64.tar.gz",
+    "hash": "c16d736a8371f08857d2f25c0f55e17cb1294b3d647a17c9d2bdef45ff338b35",
     "bin": "speedtest-go.exe",
     "checkver": {
         "github": "https://github.com/showwin/speedtest-go"
